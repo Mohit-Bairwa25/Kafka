@@ -1,0 +1,31 @@
+https://start.spring.io/;
+Go to this Link
+
+Project: Maven
+Language: Java
+Spring Boot: 3.3.3
+
+Project Metadata
+Group: com.deliveryboy
+Artifact: deliveryboy
+Name: deliveryboy
+Description: This service will provide location update
+Package Name: com.deliveryboy
+Packaging: Jar
+Java: 17
+
+Dependencies
+Spring Web:
+Spring for Apache Kafka:
+
+Genrate + <--|
+
+This will download a zip file
+
+Create Another file with these changes and everything will be same
+
+Group: com.enduser
+Artifact: enduser
+Name: enduser
+Description: This service will consume location update
+Package Name: com.enduser

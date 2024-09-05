@@ -1,0 +1,39 @@
+https://www.apache.org/dyn/closer.cgi?path=/kafka/3.8.0/kafka_2.13-3.8.0.tgz
+
+Download Kafka from this Link
+Extract the Folder Paste it in C Driver
+
+In File Explorer Clear File Address bar and type cmd
+this will open command promt in,that Folder
+
+C:\kafka_2.13-3.8.0>bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+
+Don't Close This terminal open new terminal,and then run it as administrator
+
+through cd command go to this directroy
+
+C:\kafka_2.13-3.8.0>bin\windows\kafka-server-start.bat .\config\server.properties
+INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT://First-Hokage.mshome.net:9092
+
+Let's use Kafka with console
+
+1. Create new topic with kafka-topics
+2. Produce example message with kafka-console-producer
+3. Consume the message with kafka-console-consumer
+
+Open New Terminal
+C:\kafka_2.13-3.8.0>bin\windows\kafka-topics.bat --create --topic user-topic --bootstrap-server localhost:9092
+Created topic user-topic.
+
+C:\kafka_2.13-3.8.0>bin\windows\kafka-console-producer.bat --topic user-topic --bootstrap-server localhost:9092
+>
+Send Messages Here
+
+Don't Close This terminal Open New Terminal
+You Will recive Messages Here
+C:\kafka_2.13-3.8.0>bin\windows\kafka-console-consumer.bat --topic user-topic --from-beginning --bootstrap-server localhost:9092
+
+To Create New/Multiple consumer
+C:\kafka_2.13-3.8.0>bin\windows\kafka-console-consumer.bat --topic user-topic --from-beginning --bootstrap-server localhost:9092
